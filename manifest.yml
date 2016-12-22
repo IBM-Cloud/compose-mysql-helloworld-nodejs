@@ -1,0 +1,7 @@
+---
+applications:
+- name:    compose-mysql-helloworld-nodejs
+  host:    compose-mysql-helloworld-nodejs
+  memory:  256M
+  services:
+    - my-compose-for-mysql-service
