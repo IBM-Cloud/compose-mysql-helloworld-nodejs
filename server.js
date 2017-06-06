@@ -41,7 +41,7 @@ var appenv = cfenv.getAppEnv();
 // Within the application environment (appenv) there's a services object
 var services = appenv.services;
 
-// The services object is a map named by service so we extract the one for PostgreSQL
+// The services object is a map named by service so we extract the one for MySQL
 var mysql_services = services["compose-for-mysql"];
 
 // This check ensures there is a services for MySQL databases
