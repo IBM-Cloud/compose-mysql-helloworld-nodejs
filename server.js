@@ -41,13 +41,13 @@ var appenv = cfenv.getAppEnv();
 // Within the application environment (appenv) there's a services object
 var services = appenv.services;
 
-// The services object is a map named by service so we extract the one for PostgreSQL
+// The services object is a map named by service so we extract the one for MySQL
 var mysql_services = services["compose-for-mysql"];
 
 // This check ensures there is a services for MySQL databases
 assert(!util.isUndefined(mysql_services), "Must be bound to compose-for-mysql services");
 
-// We now take the first bound MongoDB service and extract it's credentials object
+// We now take the first bound MySQL service and extract it's credentials object
 var credentials = mysql_services[0].credentials;
 
 var connectionString = credentials.uri;
