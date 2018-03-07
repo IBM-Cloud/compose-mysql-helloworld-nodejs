@@ -8,8 +8,7 @@
     "http-post": "^0.1.1",
     "http-proxy": "^1.8.1",
     "mysql": "*",
-    "cfenv": "1.0.x",
-    "cf-deployment-tracker-client": "*"
+    "cfenv": "1.0.x"
   },
   "engines": {
     "node": "8.x"
